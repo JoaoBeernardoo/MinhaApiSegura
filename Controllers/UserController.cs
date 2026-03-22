@@ -23,6 +23,7 @@ namespace MinhaApiSegura.Controllers
             
             var result = await _service.Create(user);
             return Ok(result);
+            
         }
 
         [HttpGet]
