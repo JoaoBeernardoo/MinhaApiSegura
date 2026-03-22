@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MinhaApiSegura.Entities;
 using MinhaApiSegura.Services.Interfaces;
@@ -16,6 +17,7 @@ namespace MinhaApiSegura.Controllers
         }
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Create(User user)
         {
             var result = await _service.Create(user);
