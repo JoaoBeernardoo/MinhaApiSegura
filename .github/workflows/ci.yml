@@ -46,7 +46,7 @@ jobs:
       with:
         target: 'http://localhost:5000/swagger/v1/swagger.json'
         format: openapi
-      fail_action: false
+        fail_action: false
     
     
     - name: Upload ZAP Report
