@@ -20,6 +20,7 @@ namespace MinhaApiSegura.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> Create(User user)
         {
+            
             var result = await _service.Create(user);
             return Ok(result);
         }
