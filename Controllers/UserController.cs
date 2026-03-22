@@ -29,6 +29,7 @@ namespace MinhaApiSegura.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
+            
             return Ok(await _service.GetAll());
         }
 
