@@ -39,7 +39,7 @@ jobs:
       run: sleep 15
     
     - name: Liberar permissões
-      run: chmod -R 777 
+      run: chmod -R 777 .
 
     - name: OWASP ZAP Scan
       uses: zaproxy/action-baseline@v0.10.0
